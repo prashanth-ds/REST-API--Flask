@@ -1,0 +1,496 @@
+{
+	"info": {
+		"_postman_id": "9bd167a4-b3e1-4025-ad18-aff7a1dbdde6",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "REST API",
+			"item": [
+				{
+					"name": "Testing",
+					"item": [
+						{
+							"name": "Customers",
+							"item": [
+								{
+									"name": "Customer",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:5000/customers/AROUT",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"customers",
+												"AROUT"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Customers",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:5000/customers",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"customers"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Customer",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"customer_id\": \"DSPPP\", \"company_name\": \"Datagrokr\", \"contact_name\": \"Naveen Gainedi\", \"contact_title\": \"M.D\", \"address\": \"Bell Air Drive 5th Floor, Mekhri Circle\", \"city\": \"Bangalore\", \"region\": \"Asia\", \"postal_code\": \"560032\", \"country\": \"India\", \"phone\": \"080-12345678\", \"fax\": \"080-12345678\"}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/customers/DSPPP",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"customers",
+												"DSPPP"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Customer",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"customer_id\": \"DSPPP\", \"company_name\": \"Datagrokr\", \"contact_name\": \"Naveen Gainedi\", \"contact_title\": \"Managing Director\", \"address\": \"Bell Air Drive 5th Floor, Mekhri Circle\", \"city\": \"Bangalore\", \"region\": \"Asia\", \"postal_code\": \"560032\", \"country\": \"India\", \"phone\": \"080-12345678\", \"fax\": \"080-12345678\"}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/customers/DSPPP",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"customers",
+												"DSPPP"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Customer",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:5000/customers/DSPPP",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"customers",
+												"DSPPP"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Products",
+							"item": [
+								{
+									"name": "Product",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:5000/products/7",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"products",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Products",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:5000/products",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"products"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"product_id\": \"78\", \"product_name\": \"Chai\", \"supplier_id\": \"7\", \"category_id\": \"1\", \"quantity_per_unit\": \"10 boxes x 20 bags\", \"unit_price\": \"18.00\", \"units_in_stock\": \"39\", \"units_on_order\": \"0\", \"reorder_level\": \"10\", \"discontinued\": \"0\"}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/products/78",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"products",
+												"78"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"product_id\": \"78\", \"product_name\": \"Mashed Potatoes\", \"supplier_id\": \"7\", \"category_id\": \"1\", \"quantity_per_unit\": \"10 boxes x 20 bags\", \"unit_price\": \"18.00\", \"units_in_stock\": \"39\", \"units_on_order\": \"0\", \"reorder_level\": \"10\", \"discontinued\": \"0\"}"
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/products/78",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"products",
+												"78"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "http://127.0.0.1:5000/products/78",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"products",
+												"78"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Orders",
+							"item": [
+								{
+									"name": "Order",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:5000/orders/10256",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"orders",
+												"10256"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Orders",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:5000/orders",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"orders"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Order",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"order_id\": \"11078\", \"customer_id\": \"WELLI\", \"employee_id\": \"9\", \"order_date\": \"1996-07-04 00:00:00.000\", \"required_date\": \"1996-08-01 00:00:00.000\", \"shipped_date\": \"1996-07-16 00:00:00.000\", \"ship_via\": \"2\", \"freight\": \"32.38\", \"ship_name\": \"Vins et alcools Chevalier\", \"ship_address\": \"59 rue de l'Abbaye\", \"ship_city\": \"Reims\", \"ship_region\": \"NULL\", \"ship_postal_code\": \"51100\", \"ship_country\": \"France\"}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/orders/11078",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"orders",
+												"11078"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Order",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"order_id\": \"11078\", \"customer_id\": \"WELLI\", \"employee_id\": \"1\", \"order_date\": \"1996-07-04 00:00:00.000\", \"required_date\": \"1996-08-01 00:00:00.000\", \"shipped_date\": \"1996-07-16 00:00:00.000\", \"ship_via\": \"1\", \"freight\": \"32.38\", \"ship_name\": \"Vins et alcools Chevalier\", \"ship_address\": \"59 rue de l'Abbaye\", \"ship_city\": \"City\", \"ship_region\": \"NULL\", \"ship_postal_code\": \"51100\", \"ship_country\": \"France\"}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/orders/11078",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"orders",
+												"11078"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Order",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"order_id\": \"11078\", \"customer_id\": \"WELLI\", \"employee_id\": \"1\", \"order_date\": \"1996-07-04 00:00:00.000\", \"required_date\": \"1996-08-01 00:00:00.000\", \"shipped_date\": \"1996-07-16 00:00:00.000\", \"ship_via\": \"1\", \"freight\": \"32.38\", \"ship_name\": \"Vins et alcools Chevalier\", \"ship_address\": \"59 rue de l'Abbaye\", \"ship_city\": \"City\", \"ship_region\": \"NULL\", \"ship_postal_code\": \"51100\", \"ship_country\": \"France\"}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:5000/orders/11078",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"orders",
+												"11078"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Order History",
+							"item": [
+								{
+									"name": "Order History",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:5000/order-details/11077",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "5000",
+											"path": [
+												"order-details",
+												"11077"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
